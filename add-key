@@ -3,12 +3,12 @@
 sudo -s <<EOL
 
   SOURCE_DIR=/var/lib/tsuru
-  source ${SOURCE_DIR}/config
+  source \${SOURCE_DIR}/config
 
-  mkdir -p /home/${USER}/.ssh
-  chmod 700 /home/${USER}/.ssh
-  echo "$@" >> /home/${USER}/.ssh/authorized_keys
-  chmod 600 /home/${USER}/.ssh/authorized_keys
-  chown -R ${USER}:${USER} /home/${USER}/.ssh
+  mkdir -p /home/\${USER}/.ssh
+  chmod 700 /home/\${USER}/.ssh
+  echo "$@" >> /home/\${USER}/.ssh/authorized_keys
+  chmod 600 /home/\${USER}/.ssh/authorized_keys
+  chown -R \${USER}:\${USER} /home/\${USER}/.ssh
 
 EOL
