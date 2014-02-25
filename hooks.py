@@ -13,12 +13,12 @@ def load_commands(data):
     return []
 
 
-def execute_commands(commands, working_dir="/home/application/current"):
+def execute_commands(commands, working_dir="/app"):
     for command in commands:
         subprocess.call(command, shell=True, cwd=working_dir)
 
 
-def load_file(working_dir="/home/application/current"):
+def load_file(working_dir="/app"):
     files_name = ["app.yaml", "app.yml"]
     for file_name in files_name:
         try:
