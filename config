@@ -1,6 +1,6 @@
 #!/bin/bash
 
-APP_DIR=/app
-CURRENT_DIR=${APP_DIR}
+APP_DIR=
+CURRENT_DIR=/app
 USER=ubuntu
 HOME=/home/ubuntu
