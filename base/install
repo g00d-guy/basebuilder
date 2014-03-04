@@ -2,7 +2,7 @@
 
 # do not remove, circus is needed to manage application processes
 # and its environment variables
-echo "deb http://archive.ubuntu.com/ubuntu quantal-backports main" | tee /etc/apt/sources.list.d/backports.list
+echo "deb http://archive.ubuntu.com/ubuntu quantal-backports main universe" | tee /etc/apt/sources.list.d/backports.list
 apt-get update
 apt-get install git openssh-server python-pip libzmq-dev g++ python-dev wget jq -y
 pip install git+https://github.com/andrewsmedina/circus.git@validate_option_hooks
