@@ -7,5 +7,6 @@ mkdir -p /etc/circus
 cp ${SOURCE_DIR}/utils/circus.ini /etc/circus/circus.ini
 mkdir /home/application
 useradd -m ${USER} -s /bin/bash
-chown ${USER}:${USER} /home/application
+mkdir /home/${USER}/bin
+chown ${USER}:${USER} /home/application /home/${USER}/bin
 echo "ubuntu ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
